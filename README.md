@@ -33,19 +33,36 @@ Não há build step — é HTML/CSS/JS puro. Abra `index.html` direto no navegad
 npx serve .
 ```
 
-## Identidade visual
+## Identidade visual (v2 — redesign premium/editorial, 2026-08-25)
 
 | Token | Valor |
 |---|---|
-| Cor principal | `#8C6E5D` |
-| Cor secundária | `#F5EDE6` |
-| Fundo | `#FFFFFF` / `#FAF8F6` |
-| Destaque | `#B98B6E` |
-| Texto | `#2B2420` |
+| Fundo | `#FAF8F5` |
+| Fundo alternativo | `#F1EAE1` |
+| Tinta (texto principal) | `#211D1A` |
+| Tinta suave | `#5C5650` |
+| Taupe | `#8A6F5C` |
+| Destaque (uso moderado) | `#A9785C` |
+| Linhas finas | `#E4DBCE` |
 | Título | Fraunces (serifada editorial) |
 | Corpo | Jost (sans-serif humanista) |
 
-Paleta é **sugestão de trabalho**, não confirmada por inspeção visual real do feed — validar com fotos reais antes de publicar.
+Paleta neutra (off-white/bege/taupe), sem rosa genérico — ainda é **sugestão de trabalho**, não confirmada por inspeção visual real do feed.
+
+## Redesign v2 (2026-08-25)
+
+Reformulação completa a pedido do usuário: elevar percepção de autoridade, sofisticação e conversão, sem descaracterizar o conceito original. Principais mudanças:
+
+- **Header fixo** com navegação por âncora (Sobre, Abordagem, Procedimentos, Resultados, Avaliações, Localização) + menu mobile em hambúrguer
+- **Hero reestruturado** com identificação (nome + CRBM + cidade), headline, CTA primário/secundário e marcas de confiança discretas
+- **Nova seção "Posicionamento"** (statement) substituindo a antiga "Abertura emocional" — evita repetição com a seção de Filosofia
+- **Filosofia** reformulada em 3 princípios (Preservar/Equilibrar/Valorizar) sobre fundo escuro, tipografia grande, sem cards
+- **Procedimentos** viraram lista editorial (linhas finas) em vez de grid de cards
+- **Resultados** com fundo escuro, galeria maior, legendas discretas
+- **WhatsApp com mensagem pré-preenchida** em todos os CTAs (header, hero, método, procedimentos, resultados, CTA final) + **barra fixa no rodapé mobile**
+- **SEO**: Open Graph, Twitter Card, canonical, dados estruturados (JSON-LD `MedicalBusiness`, usando só dados já confirmados — endereço, telefone, avaliação do Google)
+- **Micro-interações**: fade-in discreto ao rolar (`.reveal`), com **progressive enhancement real** — o conteúdo só fica invisível por padrão quando a classe `.js` é aplicada no `<html>` (script inline no `<head>`); sem JavaScript, ou se o `IntersectionObserver` falhar por qualquer motivo, existe um `setTimeout` de segurança de 2s que força tudo a ficar visível. Conteúdo nunca fica travado invisível.
+- Seção "Sobre" não expõe lacunas de informação (formação, anos de experiência) publicamente — a decisão de design e o motivo estão documentados em comentário HTML no próprio `index.html`, e as pendências reais continuam listadas abaixo.
 
 ## Localização e avaliações
 
