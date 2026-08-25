@@ -62,8 +62,8 @@ Estas informações não foram encontradas na análise do Instagram/Google e **n
 - [ ] E-mail profissional (além do WhatsApp)
 - [ ] Horários de atendimento — Google Maps mostra só "Abre às 09:00", sem grade completa da semana
 - [ ] Fotos de procedimentos e do ambiente do consultório (a seção Procedimentos segue só com texto)
-- [ ] **Autorização por escrito das 3 pacientes das fotos de antes/depois** (`antes-depois-01/02/03.png`), confirmando consentimento para uso público no site — prioridade alta antes do lançamento
-- [ ] **Autorização explícita da Dra. Jaqueline** para publicar os 5 retratos pessoais fornecidos (`assets/images/retrato-*.png/jpg`)
+- [x] ~~Autorização por escrito das 3 pacientes das fotos de antes/depois~~ (`antes-depois-01/02/03.png`) — confirmada pelo usuário em 2026-08-25
+- [x] ~~Autorização explícita da Dra. Jaqueline para publicar os retratos pessoais~~ (`assets/images/retrato-*.png/jpg`) — confirmada pelo usuário em 2026-08-25
 - [ ] Depoimentos reais adicionais, com autorização de nome/imagem (hoje só há os 2 do Google)
 - [ ] Detalhamento do procedimento "Lábios"
 - [ ] Nome oficial da clínica/consultório, se houver
