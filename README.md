@@ -53,7 +53,7 @@ Paleta neutra (off-white/bege/taupe), sem rosa genérico — ainda é **sugestã
 
 Reformulação completa a pedido do usuário: elevar percepção de autoridade, sofisticação e conversão, sem descaracterizar o conceito original. Principais mudanças:
 
-- **Header fixo** com navegação por âncora (Sobre, Abordagem, Procedimentos, Resultados, Avaliações, Localização) + menu mobile em hambúrguer
+- **Header fixo** com navegação por âncora (Sobre, Filosofia, Procedimentos, Resultados, Avaliações, Localização) + menu mobile em hambúrguer
 - **Hero reestruturado** com identificação (nome + CRBM + cidade), headline, CTA primário/secundário e marcas de confiança discretas
 - **Nova seção "Posicionamento"** (statement) substituindo a antiga "Abertura emocional" — evita repetição com a seção de Filosofia
 - **Filosofia** reformulada em 3 princípios (Preservar/Equilibrar/Valorizar) sobre fundo escuro, tipografia grande, sem cards
@@ -67,8 +67,31 @@ Reformulação completa a pedido do usuário: elevar percepção de autoridade, 
 ## Localização e avaliações
 
 - **Endereço:** R. José Bruni, 578, Itu - SP, 13304-080 (confirmado via Google Maps, telefone da ficha bate com o WhatsApp já usado no site). Exibido no rodapé e na seção "Localização", com mapa incorporado (embed público do Google Maps, sem chave de API).
-- **Avaliações:** nota 5,0 com apenas **2 avaliações no Google** — amostra ainda muito pequena para ser uma prova social forte. Exibidas as duas: Talita Lima (texto parcial — o Google só libera o trecho completo com login) e Sirlei Rossi (5 estrelas, sem comentário escrito). Nada foi inventado ou completado além do que a ficha pública mostra.
+- **Avaliações:** nota 5,0 com apenas **2 avaliações no Google** — amostra ainda pequena para ser uma prova social forte (nota interna; a página pública não faz essa ressalva ao visitante). Exibidas as duas: Talita Lima (texto parcial, o Google só libera o trecho completo com login) e Sirlei Rossi (5 estrelas, sem comentário escrito). Nada foi inventado ou completado além do que a ficha pública mostra.
 - **Categoria no Google:** a ficha lista o negócio como "Esteticista". Por instrução do usuário, o site trata a profissional como **Biomédica Esteta** — título já aplicado em "Sobre" e no rodapé.
+
+## Revisão v3 (2026-08-25) — refinamento de conteúdo e limpeza de placeholders
+
+Segunda passada de revisão sobre o redesign v2, focada em dois pontos: remover qualquer texto provisório visível ao visitante, e revisar pontuação/naturalidade de todos os textos.
+
+**Placeholders removidos da interface pública** (ficam só como comentário `TODO` no código ou registrados aqui):
+- Card "Lábios": removida a linha "Detalhes a confirmar com a profissional." — o card agora mostra só nome, descrição curta e CTA, sem expor a lacuna ao visitante. `TODO` correspondente adicionado no `index.html`.
+- Seção "Resultados": removida a nota "publicação sujeita a confirmação de autorização por escrito..." — a autorização já foi confirmada pelo usuário (2026-08-25), e o registro ficou em comentário HTML na própria seção em vez de aparecer para o visitante.
+- Seção "Avaliações": removido o texto "amostra ainda pequena" — é uma ressalva interna nossa, não algo que uma página premium deveria admitir ao visitante.
+
+**Pontuação e naturalidade:** revisão de travessões (`—`) usados para conectar ideias dentro de frases, trocados por vírgula ou ponto quando ficava mais natural (ex.: bio, filosofia, seção "Sobre"). Travessões mantidos apenas em usos tipográficos legítimos (separador de título/label, como "Itu — SP" em rótulos curtos). Removidas aspas duplas redundantes em trechos que já usavam itálico para destaque (seção "Sobre").
+
+**Renomeação:** nav "Abordagem" → "Filosofia" (id da seção também mudou de `#abordagem` para `#filosofia`); se algum link externo já aponta para `#abordagem`, vai quebrar — não identificamos nenhum até agora.
+
+**CTAs atualizados** em toda a página para textos mais diretos: "Quero conversar" (hero), "Conversar" (header/nav), "Quero entender o que faz sentido para mim" (método), "Quero conversar no WhatsApp" (CTA final), "Conversar no WhatsApp" (barra fixa mobile). Hero perdeu o CTA secundário ("Conhecer a abordagem") para ficar mais limpo, no espírito de campanha editorial.
+
+### Texto padrão para uso futuro (só se necessário)
+
+Se um dia for preciso avisar o visitante que algum conteúdo pode mudar (ex.: se a seção de Procedimentos crescer com informação ainda não validada), usar este texto discreto em vez de inventar dado ou deixar placeholder cru:
+
+> "Informações sobre procedimentos, indicações e disponibilidade podem ser atualizadas conforme avaliação profissional e critérios específicos de cada atendimento. Para informações personalizadas, entre em contato diretamente com a Dra. Jaqueline."
+
+Usar com moderação — não colocar em toda seção, sob risco de a página parecer incompleta.
 
 ## Pendências antes de publicar
 
