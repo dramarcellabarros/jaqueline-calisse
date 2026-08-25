@@ -43,9 +43,9 @@ Estas informações não foram encontradas na análise do Instagram e **não for
 
 - [ ] Formação completa (graduação, pós-graduações, cursos)
 - [ ] Anos de experiência / tempo de atuação
-- [ ] Endereço físico do consultório/clínica
+- [x] ~~Endereço físico do consultório/clínica~~ — **R. José Bruni, 578, Itu - SP, 13304-080** (confirmado via Google Maps, ficha "Dra. Jaqueline Calisse", telefone (11) 93316-3751 bate com o WhatsApp já usado no site). Já incluído no rodapé do site.
 - [ ] E-mail profissional (além do WhatsApp)
-- [ ] Horários de atendimento
+- [ ] Horários de atendimento — Google Maps mostra só "Abre às 09:00", sem grade completa da semana; confirmar com ela
 - [ ] Fotos profissionais em alta resolução (dela + ambiente) — hoje todas as fotos do site são placeholders visuais (blocos de cor)
 - [ ] Fotos de antes/depois com autorização de uso por escrito
 - [ ] Depoimentos reais de pacientes, com autorização de nome/imagem
@@ -53,6 +53,8 @@ Estas informações não foram encontradas na análise do Instagram e **não for
 - [ ] Nome oficial da clínica/consultório, se houver
 - [ ] Confirmação da paleta de cores real da marca
 - [ ] Confirmar com a profissional o uso do número de WhatsApp já usado no CTA (`wa.me/5511933163751`, público na bio dela) antes de publicar
+
+**Divergência encontrada:** a ficha do Google Maps categoriza o negócio como "Esteticista", enquanto o Instagram/CRBM indica Biomedicina (CRBM | SP 27988). Pode ser só categorização genérica do Google (comum em fichas não totalmente configuradas pelo próprio profissional) — vale confirmar com ela antes de publicar, para não gerar inconsistência de registro profissional no site.
 
 Use o [checklist de onboarding](../scratchpad/checklist_onboarding_cliente.docx) do projeto pra coletar tudo isso numa única conversa com ela.
 
