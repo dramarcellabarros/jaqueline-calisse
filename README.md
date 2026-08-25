@@ -12,12 +12,18 @@ dra-jaqueline-calisse/
 ├── css/style.css             # paleta, tipografia e layout
 ├── js/main.js                 # reservado para interações futuras
 ├── assets/images/
-│   ├── retrato-01.jpg          # foto pessoal (fornecida) — usada em "Sobre"
-│   └── retrato-02.png          # foto pessoal (fornecida) — usada no Hero e no CTA final
+│   ├── retrato-03.png           # foto pessoal — em uso no Hero
+│   ├── retrato-04.png           # foto pessoal — em uso em "Sobre"
+│   ├── retrato-05.png           # foto pessoal — em uso no CTA final
+│   ├── retrato-01.jpg           # foto pessoal — sobra, não usada no momento
+│   ├── retrato-02.png           # foto pessoal — sobra, não usada no momento
+│   ├── antes-depois-01.png      # em uso em "Resultados"
+│   ├── antes-depois-02.png      # em uso em "Resultados"
+│   └── antes-depois-03.png      # em uso em "Resultados"
 └── README.md
 ```
 
-As duas fotos vieram da pasta `Imagens/` fornecida diretamente pelo usuário (fora do controle de versão) e foram copiadas para `assets/images/` com nomes descritivos. Procedimentos e Resultados ainda usam placeholders visuais — não há fotos de procedimento/antes-depois disponíveis ainda.
+Todas as fotos vieram da pasta `Imagens/` fornecida diretamente pelo usuário (fora do controle de versão, listada no `.gitignore`) e foram copiadas para `assets/images/` com nomes descritivos. Há 5 retratos pessoais no total — 3 estão em uso (Hero, Sobre, CTA final) e 2 ficam disponíveis como sobra para uma futura seção ou substituição. Procedimentos ainda não tem fotos próprias (segue com cards só de texto).
 
 ## Rodar localmente
 
@@ -55,14 +61,14 @@ Estas informações não foram encontradas na análise do Instagram/Google e **n
 - [ ] Anos de experiência / tempo de atuação
 - [ ] E-mail profissional (além do WhatsApp)
 - [ ] Horários de atendimento — Google Maps mostra só "Abre às 09:00", sem grade completa da semana
-- [ ] Fotos de procedimentos e do ambiente do consultório (Procedimentos e Resultados ainda usam placeholders)
-- [ ] Fotos de antes/depois com autorização de uso por escrito
+- [ ] Fotos de procedimentos e do ambiente do consultório (a seção Procedimentos segue só com texto)
+- [ ] **Autorização por escrito das 3 pacientes das fotos de antes/depois** (`antes-depois-01/02/03.png`), confirmando consentimento para uso público no site — prioridade alta antes do lançamento
+- [ ] **Autorização explícita da Dra. Jaqueline** para publicar os 5 retratos pessoais fornecidos (`assets/images/retrato-*.png/jpg`)
 - [ ] Depoimentos reais adicionais, com autorização de nome/imagem (hoje só há os 2 do Google)
 - [ ] Detalhamento do procedimento "Lábios"
 - [ ] Nome oficial da clínica/consultório, se houver
 - [ ] Confirmação da paleta de cores real da marca
 - [ ] Confirmar com a profissional o uso do número de WhatsApp já usado no CTA (`wa.me/5511933163751`, público na bio dela) antes de publicar
-- [ ] Autorização explícita para publicar as 2 fotos de retrato fornecidas (`assets/images/`) no site
 
 Use o [checklist de onboarding](../scratchpad/checklist_onboarding_cliente.docx) do projeto pra coletar tudo isso numa única conversa com ela.
 
