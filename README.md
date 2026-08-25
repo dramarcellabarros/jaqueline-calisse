@@ -1,6 +1,8 @@
 # Dra. Jaqueline Calisse — Site institucional
 
-Prévia de site institucional para a Dra. Jaqueline Calisse (Biomédica Esteta, CRBM | SP 27988), harmonização orofacial em Itu/SP. Construído a partir da análise estratégica do perfil [@dra.jaquelinecalisse](https://www.instagram.com/dra.jaquelinecalisse/) — copy e estrutura seguem a voz e o posicionamento reais dela, não um template genérico de estética.
+Prévia de site institucional para a Dra. Jaqueline Calisse (Biomédica Esteta, CRBM | SP 27988), harmonização facial em Itu/SP. Construído a partir da análise estratégica do perfil [@dra.jaquelinecalisse](https://www.instagram.com/dra.jaquelinecalisse/) — copy e estrutura seguem a voz e o posicionamento reais dela, não um template genérico de estética.
+
+**Correção importante (2026-08-25):** o termo "Harmonização Orofacial" foi removido de todos os lugares onde funcionava como título/especialidade/denominação profissional (title da página, meta description, Open Graph, JSON-LD, identificação no Hero) e do nome do procedimento na seção Procedimentos. Motivo: "Harmonização Orofacial" é a denominação de uma especialidade reconhecida pelo Conselho Federal de Odontologia — não há confirmação de que a Dra. Jaqueline (Biomédica, CRBM) esteja formalmente autorizada a usar essa denominação específica, e as atribuições da Biomedicina Estética não devem ser presumidas equivalentes às da especialidade odontológica. O termo genérico "harmonização facial" (não regulamentado como especialidade específica) substituiu os usos anteriores. Ver pendência correspondente abaixo.
 
 **Conceito central da página:** *"Harmonização que devolve ao rosto o descanso que a pessoa já sente por dentro — sem apagar quem ela é."*
 
@@ -93,10 +95,27 @@ Se um dia for preciso avisar o visitante que algum conteúdo pode mudar (ex.: se
 
 Usar com moderação — não colocar em toda seção, sob risco de a página parecer incompleta.
 
+## Revisão v4 (2026-08-25) — refinamento pontual + correção de denominação profissional
+
+Rodada de refinamento sobre o redesign v2/v3 (sem reestruturar seções):
+
+- **Bug real de mobile/desktop corrigido:** os títulos com quebra de linha fixa (`<br>`) — Hero, "Posicionamento" e CTA final — forçavam cada frase a caber em exatamente 1 linha. Em telas mais estreitas que o esperado (inclusive no desktop, porque Hero e CTA final são grids de 2 colunas, então a coluna de texto é bem mais estreita que a viewport inteira), isso fazia cada frase quebrar de novo por dentro, dobrando o número de linhas de forma desigual (chegou a 6 linhas no Hero mobile). Trocado por reflow natural (`<span class="line">` sem quebra forçada) + ajuste fino do tamanho da fonte do Hero. Verificado via medição de layout real (não só leitura de estrutura) em 375px e 1280px.
+- Frase "o que você fez?": ajustada para "ouvir *o que você fez?*" / "ouvir *você está tão bem, descansou?*", conforme direção pedida.
+- Descrição de "Lábios" reescrita (deixou de ser só "Harmonização labial.") e ganhou a mesma estrutura das outras 3 (descrição + público-alvo), removendo a assimetria visual que esse card tinha antes.
+- Pequena revisão de naturalidade: repetição de "isso...isso" na Filosofia corrigida.
+- Limpeza de CSS morto (`.results__note`, `.procedure--brief`) que sobrou de rodadas anteriores.
+
+### Correção de denominação profissional (mesma data, após revisão do usuário)
+
+O usuário identificou um problema mais sério: eu vinha usando "Harmonização Orofacial" como se fosse a especialidade/título formal da Dra. Jaqueline (no `<title>`, meta description, Open Graph, JSON-LD, e principalmente ao lado de "Biomédica Esteta" no identificador do Hero). Esse termo é a denominação de uma especialidade reconhecida pelo Conselho Federal de **Odontologia** — a Dra. Jaqueline é Biomédica (CRBM), e não há confirmação de que ela esteja formalmente autorizada a usar essa denominação específica. As atribuições da Biomedicina Estética não devem ser presumidas equivalentes às da especialidade odontológica.
+
+**Correção aplicada:** removido "Harmonização Orofacial" de todo contexto de título/identidade/dado estruturado. O Hero agora identifica só "Biomédica Esteta" (sem termo pareado). Onde o texto descreve a atividade (não o título profissional), troquei por "harmonização facial", termo genérico de mercado sem associação a uma especialidade regulamentada específica — inclusive o nome do procedimento na seção Procedimentos, que era "Harmonização Orofacial" e virou "Harmonização Facial". Nova pendência registrada abaixo.
+
 ## Pendências antes de publicar
 
 Estas informações não foram encontradas na análise do Instagram/Google e **não foram inventadas** — precisam ser confirmadas com a profissional antes do site ir ao ar:
 
+- [ ] **Denominação correta dos procedimentos que ela realiza** — confirmar se "harmonização facial" é o termo que ela usa/prefere, e se "Harmonização Orofacial" é uma denominação que ela está formalmente autorizada a usar (ver correção acima)
 - [ ] Formação completa (graduação, pós-graduações, cursos)
 - [ ] Anos de experiência / tempo de atuação
 - [ ] E-mail profissional (além do WhatsApp)

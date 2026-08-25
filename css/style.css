@@ -1,5 +1,5 @@
 /* ===================================================
-   Dra. Jaqueline Calisse — Harmonização Orofacial
+   Dra. Jaqueline Calisse — Biomédica Esteta
    Direção visual: editorial premium, neutra, discreta.
    =================================================== */
 
@@ -54,6 +54,13 @@ h1, h2, h3 {
 p { margin: 0 0 1rem; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
+
+/* Textos de título reflutuam naturalmente (sem quebra de linha forçada).
+   Testado: forçar 1 frase = 1 linha quebrava de forma desigual sempre que
+   a coluna de texto era mais estreita que o esperado (hero e CTA final
+   são grids de 2 colunas, então o texto tem menos espaço do que parece).
+   Ver .hero__headline, .statement__quote, .cta-final__content h2. */
+.line { display: inline; }
 
 .skip-link {
   position: absolute;
@@ -226,8 +233,8 @@ img { max-width: 100%; display: block; }
   margin-top: 0.2rem;
 }
 .hero__headline {
-  font-size: clamp(2rem, 3.6vw, 3rem);
-  line-height: 1.22;
+  font-size: clamp(1.65rem, 3.6vw, 2.5rem);
+  line-height: 1.3;
   font-weight: 500;
 }
 .hero__sub {
@@ -419,7 +426,6 @@ img { max-width: 100%; display: block; }
 .procedure h3 { font-size: 1.2rem; margin: 0; }
 .procedure__desc { color: var(--ink-soft); margin: 0; font-size: 0.95rem; }
 .procedure__for { font-size: 0.85rem; color: var(--ink-faint); margin: 0; }
-.procedure--brief .procedure__link { grid-column: 4; }
 .procedure__link {
   font-size: 0.85rem;
   letter-spacing: 0.03em;
@@ -436,13 +442,7 @@ img { max-width: 100%; display: block; }
   padding: var(--space-section) 1.5rem;
   text-align: center;
 }
-.results__title { color: #fff; max-width: 26ch; margin: 0 auto 1rem; font-size: clamp(1.7rem, 3.2vw, 2.4rem); }
-.results__note {
-  max-width: 52ch;
-  margin: 0 auto 3rem;
-  color: #C9BEB2;
-  font-size: 0.95rem;
-}
+.results__title { color: #fff; max-width: 26ch; margin: 0 auto 3rem; font-size: clamp(1.7rem, 3.2vw, 2.4rem); }
 .results__gallery {
   max-width: var(--max-width);
   margin: 0 auto 3rem;
