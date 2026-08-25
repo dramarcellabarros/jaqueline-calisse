@@ -1,3 +1,7 @@
 .DS_Store
 Thumbs.db
 node_modules/
+
+# Pasta de origem das imagens fornecidas pelo usuário — já copiadas
+# (com nomes descritivos) para assets/images/, que é o que o site usa.
+/Imagens/
